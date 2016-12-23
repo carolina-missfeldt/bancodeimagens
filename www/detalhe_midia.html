@@ -1,0 +1,318 @@
+	<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			
+			<link rel="stylesheet" href="../css/estilo.min.css?<?php echo time(); ?>">
+			<link rel="stylesheet" href="../css/prettyCheckable.css">
+			 <link href="../js/jPlayer-2.9.2/dist/skin/blue.monday/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+			<script type="text/javascript" src="../js/jquery-1.12.3.min.js" ></script>
+			<script type="text/javascript" src="../js/jPlayer-2.9.2/dist/jplayer/jquery.jplayer.min.js"></script>
+			<script src="../js/prettyCheckable.min.js"></script>
+			<script type="text/javascript" src="../js/jquery.placeholder.min.js"></script>
+			<script type="text/javascript" src="../js/html5.js"></script>
+			<script src="../js/player.js"></script>
+			<!--[if IE 8]>
+				<script src="../js/html5shiv.min.js"></script>
+				<link rel="stylesheet" href="../css/ie8.css">
+
+			<![endif]-->	
+			<meta charset="UTF-8">
+			<title>Detalhe da Mídia</title>
+		</head>
+		<body>
+
+				<header class="cabecalho">
+					<div class="headerConteiner">
+						<a href="home.php"><img src="../img/logo.png" alt="logo Porto Seguro"></a>
+						<h1>Banco de Imagens</h1>
+						<div class="conteudoDireito">
+							<p>Olá,</p><p id="usuario" class="usuario">Carlos Andrade</p>
+							
+								
+								<ul class="menu">
+									<li class="iconMenu">
+										<img src="../img/icon_menu.png" alt="icone do menu" class="iconeDoMenu">
+										<div class="menuDropDown">
+											<ul>
+												<a href="cadastrar_midia.html">
+													<li>
+													
+														<img src="../img/icon_cad_midia.png" alt="">
+														<p>cadastrar mídia</p>
+													
+													</li>
+												</a>
+												
+												<a href="#">
+													<li>
+														
+														<img src="../img/icon_cad_usuario.png" alt="">
+															<p>gerenciar usuário</p>
+														
+													</li>
+												</a>
+												<a href="#">
+													<li>
+														
+															<img src="../img/icon_cad_agencia.png" alt="">
+															<p>gerenciar agência</p>
+														
+													</li>
+												</a>
+												<a href="#">
+													<li>
+													
+															<img src="../img/icon_cad_produto.png" alt="">
+															<p>gerenciar produto</p>
+														
+													</li>
+												</a>
+												<a href="#">
+													<li>
+														
+															<img src="../img/icon_relatorios.png" alt="">
+															<p>relatórios</p>
+														
+													</li>
+												</a>
+												<a href="index.html">
+													<li class="last">
+														
+															<img src="../img/icon_sair.png" alt="">
+															<p>sair</p>
+														
+													</li>
+												</a>
+											</ul>
+										</div>
+									</li>
+										
+
+								</ul>
+							
+						</div>
+					</div>
+
+				</header>
+
+				<div class="conteiner2">
+									
+					<a href="home.php" class="linkVoltar">voltar
+					</a>
+					<div class="conteinerBusca">
+						
+						<form>
+							<ul>
+								
+
+								<li class="campoBusca">
+								
+									 <input type="text" name="" class="textoBusca" onfocus="if(this.value=='Procure imagens, vídeos e/ou áudios') this.value = '';" onblur="if(this.value=='') this.value = 'Procure imagens, vídeos e/ou áudios';" value="Procure imagens, vídeos e/ou áudios">
+							
+								</li>
+								<li class="campoSelect">
+									
+										<select name="" id="" class="select">				
+										<option value="0" selected="selected">imagens</option>
+										<option value="1">vídeos</option>
+										<option value="2">áudios</option>
+										</select>
+									
+								</li>
+								<li class="conteinerLupa">
+									<input type="submit" class="lupa" value="">
+								</li>
+							</ul>
+						</form>
+					</div>
+					<div class="conteudo">
+					<div class="clear"></div>
+						<div class="conteudoEsquerdo">
+							<div class="conteinerMidia display">
+								<img src="../img/login_bg.png" alt="imagem cadastrada" class="midia display">
+
+							</div>
+								<div class="video   display">
+									<div id="jp_container_2" class="jp-video jp-video-360p" role="application" aria-label="media player">
+		<div class="jp-type-single">
+			<div id="jquery_jplayer_2" class="jp-jplayer"></div>
+			<div class="jp-gui">
+				<div class="jp-interface">
+					<div class="jp-progress">
+						<div class="jp-seek-bar">
+							<div class="jp-play-bar"></div>
+						</div>
+					</div>
+					<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+					<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+					<div class="jp-controls-holder">
+						<div class="jp-controls">
+							<button class="jp-play" role="button" tabindex="0">play</button>
+							<button class="jp-stop" role="button" tabindex="0">stop</button>
+						</div>
+						<div class="jp-volume-controls">
+							<button class="jp-mute" role="button" tabindex="0">mute</button>
+							<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+							<div class="jp-volume-bar">
+								<div class="jp-volume-bar-value"></div>
+							</div>
+						</div>
+						<div class="jp-toggles">
+							<button class="jp-repeat" role="button" tabindex="0">repeat</button>
+							<button class="jp-full-screen" role="button" tabindex="0">full screen</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="jp-no-solution">
+				<span>Update Required</span>
+				To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+			</div>
+		</div>
+	</div>
+								</div>	
+								<div class="audio">
+									<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+	<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+		<div class="jp-type-single">
+			<div class="jp-gui jp-interface">
+				<div class="jp-controls">
+					<button class="jp-play" role="button" tabindex="0">play</button>
+					<!-- <button class="jp-stop" role="button" tabindex="0">stop</button>
+	 -->			</div>
+				<div class="jp-progress">
+					<div class="jp-seek-bar">
+						<div class="jp-play-bar"></div>
+					</div>
+				</div>
+				<div class="jp-volume-controls">
+					<button class="jp-mute" role="button" tabindex="0">mute</button>
+					<!-- <button class="jp-volume-max" role="button" tabindex="0">max volume</button> -->
+					<div class="jp-volume-bar">
+						<div class="jp-volume-bar-value"></div>
+					</div>
+				</div>
+				<div class="jp-time-holder">
+					<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+					<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+					<div class="jp-toggles">
+						<!-- <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+	 -->				</div>
+				</div>
+			</div>
+		
+			<div class="jp-no-solution">
+				<span>Update Required</span>
+				To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+			</div>
+		</div>
+
+		</div>
+								</div>
+
+							<div class="editarExcluirMidia">
+								<p class="detalhes"><a href="#" ><img src="../img/icon_editar.png" alt="">editar mídia</a></p>
+								<!-- <p class="detalhes lastChild"><a href="#" ><img src="../img/icon_excluir.png" alt="">excluir mídia</a></p> -->
+								<p class="detalhes lastChild"><button type="button"><img src="../img/icon_excluir.png" alt="">excluir mídia</button></p>
+							</div>
+						</div>
+						<div class="conteudo_direito">
+							<h1 class="tituloCampanha">Dia dos Namorados Lorem Ipsum Porto 2015</h1>
+							<div class="conteinerVigencia">
+								<p class="titulo">Vigência</p>
+								<p class="vigencia">15 jul 2016 - 15 jul 2018</p>
+								<p class="vigencia">15 jul 2016 - 15 jul 2018</p>
+								<p class="vigencia">15 jul 2016 - 15 jul 2018</p>
+								<div class="descricaoCampanha">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia unde error minima. Nemo eius, ipsum labore vero reiciendis velit accusamus quas sequi commodi perferendis quia quam, laborum eaque odio. Aliquam vero quam consectetur alias quasi, laborum provident ex facere sit ullam. Ab, nihil magni accusamus. Quisquam repudiandae consequatur quasi autem?</p>
+
+								</div>
+							</div>
+							<ul class="colunas produto">
+								<li>
+									<h1 class="titulo">produto</h1>
+									<p class="informacao">Proteção e monitoramento</p>
+								</li>
+								<li>
+									<h1 class="titulo">subproduto</h1>
+									<p class="informacao">Segurança e saúde ocupacional</p>
+								</li>
+								<li>
+									<h1 class="titulo">campanha</h1>
+									<p class="informacao">Dia dos pais</p>
+								</li>
+								<li>
+									<h1 class="titulo">Direito de utilização</h1>
+									<p class="informacao">Online/Offline</p>
+								</li>
+							</ul>
+							<div class="descricaoCampanha">
+								<h1>Descrição da campanha</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere voluptas, soluta, accusamus maxime expedita sit minima, eius ad consequatur praesentium exercitationem eveniet aspernatur officiis nisi veniam? Quod cupiditate, repellendus voluptatum delectus reiciendis iste unde at laudantium. Aspernatur veritatis, sequi, incidunt cupiditate quisquam quos voluptate dolorum. Quibusdam id placeat architecto obcaecati!</p>
+
+								</div>
+								<h1 class="titulo">Agência / Fornecedor</h1>
+								<p class="informacao">Lorem ipsum dolor.</p>
+							<ul class="colunas utl">
+								<li class="offline">	
+									<h1 class="titulo">utilização offline</h1>
+									<p class="informacao">revista veja</p>
+									<p class="informacao">outdoor</p>
+									<p class="informacao">revista bravo</p>
+								</li>
+								<li class="online">
+									<h1 class="titulo">utilização online</h1>
+									<a href="#" class="link_utl">Portal COL</a>
+									<a href="#" class="link_utl">terra</a>
+									<a href="#" class="link_utl">UOL</a>
+									<a href="#" class="link_utl">Portal Seguro de Vida</a>
+									
+								</li>
+							</ul>
+							<ul class="colunas lista" >
+								<li>
+									<h1 class="titulo">de acordo com o guia de estilo porto seguro</h1>
+									<p class="informacao">sim</p>
+									<!-- <a href=""></a> -->
+								</li>
+								<li>
+									<h1 class="titulo">origem</h1>
+									<p class="informacao">shutterstock</p>
+									<a href="#" class="email">http://www.shutterstock.com/pic-97745612/stock-photo-beach-summer-couple-on-island-vacation-holiday-relax-in-the-sun-on-their-deck-chairs-under-a-yellow-umbrella-idyllic-travel-background.html?src=O5-AcXvcRstsX49apuOZOg-1-2</a>
+								</li>
+								<li>
+									<h1 class="titulo">arquivo disponível</h1>
+									
+									<a href="#">/arquivos/imagens/auto2017/imagem.png</a> 
+								</li>
+							</ul>
+							
+						</div>
+						<div class="clear"></div>
+						<div class="conteudoInferior">
+							<h1 class="titulo">Outras imagens do mesmo produto / </p>
+							<p class="informacao">Proteção e monitoramento</p>
+							<a href="#">ver todas</a>
+							<ul class="outrasImagens">
+								<li><img src="../img/login_bg.png" alt="outras imagens da campanha"></li>
+								<li><img src="../img/2.png" alt="outras imagens da campanha"></li>
+								<li><img src="../img/3.png" alt="outras imagens da campanha"></li>
+								<li class="lastChild"><img src="../img/4.png" alt="outras imagens da campanha"></li>
+							</ul>
+						</div>
+						<div class="clear"></div>
+					</div>
+
+				</div>
+
+				<footer class="rodape">
+					<div class="footerConteiner">
+						<p class="copy">&copy Thu Jul 28 10:40:17 BRT 2016 Porto Seguro - Todos os direitos reservados</p>
+						<a href="#" class="politica_de_privacidade">Política de Privacidade</a>
+					</div>
+				</footer>
+
+		</body>
+	</html>

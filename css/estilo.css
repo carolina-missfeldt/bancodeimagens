@@ -1,0 +1,1156 @@
+@charset "UTF-8";
+/*estilo index*/
+* {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+  * li {
+    list-style: none; }
+
+/*$foraDaValidade: url(../img/bg_vigencia_vencida.png);
+$dentroDaValidade: url(../img/bg_vigencia.png);*/
+html {
+  height: 100%; }
+
+body {
+  height: auto;
+  font-family: "Open Sans", sans-serif; }
+
+.conteinerGeral {
+  width: 100%;
+  height: 100%; }
+
+.cabecalho {
+  width: 100%;
+  height: auto;
+  background: url(../img/bg_header.png); }
+
+.cabecalho1 {
+  width: 100%;
+  height: auto;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  background: url(../img/bg_header.png); }
+
+.headerConteiner {
+  position: relative;
+  z-index: 9;
+  max-width: 980px;
+  height: auto;
+  margin: 0 auto; }
+  .headerConteiner img {
+    width: 94px;
+    height: 35px;
+    margin-top: 20px; }
+  .headerConteiner h1 {
+    font-weight: 300;
+    color: #fff;
+    font-size: 25px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 25px; }
+
+/*menu home*/
+.conteudoDireito {
+  width: 303px;
+  height: 40px;
+  float: right;
+  margin-top: 20px; }
+  .conteudoDireito p {
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 7px; }
+  .conteudoDireito .usuario {
+    margin-left: 5px;
+    color: #24d1ff;
+    text-transform: capitalize; }
+
+.iconMenu {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 95px;
+  height: 78px;
+  text-align: center;
+  /*	border-left: 1px solid  rgba(0,174,239,0.3);
+  	border-right: 1px solid  rgba(0,174,239,0.3);*/
+  border-left: 1px solid #005d90;
+  border-right: 1px solid #005d90;
+  /*background: $bgAzulClaro;*/ }
+  .iconMenu img {
+    width: 30px;
+    height: 30px;
+    margin-top: 25px; }
+  .iconMenu:hover {
+    /*background: $bgAzulClaro;*/
+    background-image: url(../img/bg_menu.png); }
+    .iconMenu:hover .menuDropDown {
+      display: block; }
+
+.menuDropDown {
+  position: absolute;
+  display: none;
+  top: 78px;
+  right: -1px;
+  width: 220px;
+  height: auto;
+  background: #8098a5;
+  text-align: left; }
+  .menuDropDown li {
+    height: auto;
+    padding: 15px 10px 15px 20px;
+    border-bottom: 1px solid #8da3ae;
+    /*border-bottom: 1px solid rgba(255,255,255,0.3);*/
+    background-size: 100% 100%; }
+    .menuDropDown li:hover {
+      /*background: $azulHeader;*/
+      background-image: url(../img/bg_menu_hover.png); }
+    .menuDropDown li .last {
+      border: none; }
+  .menuDropDown img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    margin-top: 3px;
+    vertical-align: bottom; }
+  .menuDropDown p {
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 0;
+    text-transform: capitalize; }
+  .menuDropDown a {
+    text-decoration: none !important; }
+
+/* fim menu home */
+.conteiner {
+  width: 100%;
+  height: calc(100% - 59px);
+  background-image: url(../img/login_bg.png);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+  /*	background-size: cover;
+  */
+  /*	-ms-behavior: url(backgroundsize.min.htc);
+	behavior: url(backgroundsize.min.htc);*/
+  overflow: hidden; }
+
+/*.conteiner { background-size:/*\*: 100% 100%\9; }*/
+.bgTransparente {
+  max-width: 285px;
+  /*background-color: #000;
+  filter:alpha(opacity=40);*/
+  background: rgba(0, 0, 0, 0.4);
+  padding: 5px 6px;
+  margin: 0 auto;
+  margin-top: 300px;
+  /*	position: fixed;
+  	left: 40%;
+  	top: 30%;
+  	right: 40%;*/ }
+  .bgTransparente form {
+    width: 100%; }
+  .bgTransparente input {
+    width: 100%;
+    padding: 15px 5px 15px 20px;
+    margin-bottom: 10px;
+    color: #000; }
+  .bgTransparente ::-webkit-input-placeholder {
+    color: #000; }
+  .bgTransparente :-moz-placeholder {
+    color: #000; }
+  .bgTransparente ::-moz-placeholder {
+    color: #000; }
+  .bgTransparente :-ms-input-placeholder {
+    color: #000; }
+  .bgTransparente .btEntrar {
+    margin-bottom: 0px;
+    background-color: transparent;
+    background-image: url(../img/bg_botao.png);
+    color: #fff;
+    padding-left: 5px;
+    cursor: pointer; }
+
+.caixaDireita {
+  width: 210px;
+  height: auto;
+  background: #fff;
+  position: fixed;
+  right: 0;
+  bottom: 180px;
+  padding: 25px;
+  padding-right: 50px; }
+  .caixaDireita h1 {
+    font-size: 12px; }
+  .caixaDireita h2 {
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 300; }
+  .caixaDireita h3 {
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    font-size: 10px; }
+  .caixaDireita .detalhes {
+    color: #24d1ff;
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 10px; }
+
+.rodape {
+  width: 100%;
+  background: url(../img/bg_header.png);
+  display: table;
+  /*	position: fixed !important;
+  	position: absolute;
+  	bottom: 0;
+  	left: 0;*/ }
+
+.rodape1 {
+  width: 100%;
+  background: url(../img/bg_header.png);
+  display: table;
+  position: fixed !important;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.footerConteiner {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 15px 20px; }
+  .footerConteiner p {
+    color: #005d90;
+    font-size: 12px;
+    display: inline-block; }
+  .footerConteiner .politica_de_privacidade {
+    font-size: 14px;
+    color: #24d1ff;
+    float: right;
+    margin-bottom: 25px;
+    text-decoration: none; }
+
+/* home logada */
+.conteiner2 {
+  max-width: 980px;
+  background-image: none;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  /*padding-bottom: 100px;*/ }
+
+.conteinerBusca {
+  max-width: 530px;
+  height: 50px;
+  margin: 50px auto;
+  border: 5px solid #d9d9d9;
+  background-color: #fff;
+  overflow: hidden; }
+  .conteinerBusca li {
+    /*display: inline-block;*/
+    vertical-align: top;
+    float: left; }
+
+.linkVoltar {
+  width: 40px;
+  float: left;
+  /*	margin-left: -228px;*/
+  margin-top: 15px;
+  padding-left: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: underline !important;
+  color: #24d1ff !important;
+  background-image: url(../img/icon_voltar.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-bottom: 3px; }
+
+.campoBusca {
+  max-width: 365px;
+  padding: 10px 10px 10px 20px;
+  font-size: 14px; }
+
+.textoBusca {
+  width: 335px;
+  border-right: 1px solid rgba(0, 49, 75, 0.3);
+  outline: none;
+  background-color: transparent;
+  color: #000; }
+
+::-webkit-input-placeholder {
+  color: #000; }
+
+:-moz-placeholder {
+  color: #000; }
+
+::-moz-placeholder {
+  color: #000; }
+
+:-ms-input-placeholder {
+  color: #000; }
+
+.campoSelect {
+  width: 80px;
+  height: auto;
+  padding: 6px 0 5px 0;
+  overflow: hidden;
+  background: url(../img/seta_select.png) no-repeat #fff;
+  display: inline-table;
+  background-position: 90% 16px; }
+
+.select {
+  width: 125%;
+  background-color: transparent;
+  margin-left: -5px;
+  outline: none;
+  color: #00314b;
+  font-size: 12px;
+  font-weight: 400; }
+
+.conteinerLupa {
+  width: 60px;
+  /*height: 40px;*/
+  background-image: url(../img/lupa.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 15px;
+  overflow: hidden; }
+  .conteinerLupa:hover {
+    background-image: url(../img/lupa_hover.png);
+    background-size: cover; }
+
+.lupa {
+  width: 60px;
+  height: 40px;
+  vertical-align: bottom;
+  background-color: transparent;
+  outline: none; }
+
+.opcoesDeBusca {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+  padding: 0 5px; }
+  .opcoesDeBusca li {
+    display: inline-block;
+    width: 171px;
+    /*padding: 5px 10px;*/
+    /*border: 5px solid $bordaCinza;*/
+    margin-right: 23px;
+    margin-top: 10px; }
+    .opcoesDeBusca li:last-child {
+      margin-right: 0; }
+  .opcoesDeBusca select {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: 400; }
+
+.opcoesDeBusca ul {
+  position: relative; }
+
+.label-input {
+  position: absolute;
+  top: -15px;
+  font-size: 10px;
+  margin-left: 10px;
+  text-transform: uppercase; }
+
+.mascaraImg {
+  position: absolute;
+  width: 230px;
+  height: 160px;
+  top: 0;
+  left: 0;
+  /*	background-color: #000;
+  	filter:alpha(opacity=40);*/
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  padding: 20px 20px;
+  text-align: center; }
+  .mascaraImg .vigencia {
+    margin-bottom: 20px;
+    color: #66ff00;
+    /*color: $fonteVigenciaVencida;*/
+    font-size: 16px; }
+  .mascaraImg .vigenciaVencida {
+    margin-bottom: 20px;
+    color: #ffa903;
+    font-size: 16px; }
+  .mascaraImg .tituloPromo {
+    height: 40px;
+    overflow: hidden;
+    font-weight: 600;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 15px; }
+  .mascaraImg .detalhes {
+    color: #24d1ff;
+    font-size: 12px;
+    text-decoration: underline; }
+    .mascaraImg .detalhes img {
+      margin-right: 5px;
+      vertical-align: bottom; }
+
+.mascaraAudio {
+  position: absolute;
+  width: 230px;
+  height: 160px;
+  top: 0;
+  left: 0;
+  padding: 20px 25px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #00314b;
+  background-image: url(../img/icon2_play.png);
+  background-repeat: no-repeat;
+  background-position: 50% 75%;
+  display: block;
+  text-align: center; }
+  .mascaraAudio .tituloPromo {
+    height: 40px;
+    margin-bottom: 55px;
+    font-size: 14px;
+    overflow: hidden;
+    font-weight: 600; }
+  .mascaraAudio .duracao {
+    font-size: 9px;
+    color: #fff; }
+
+.mascaraVideo {
+  position: absolute;
+  width: 230px;
+  height: 160px;
+  top: 0;
+  left: 0;
+  padding: 20px 25px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #00314b;
+  background-image: url(../img/icon2_play.png);
+  background-repeat: no-repeat;
+  background-position: 50% 75%;
+  display: block;
+  text-align: center; }
+  .mascaraVideo .tituloPromo {
+    height: 40px;
+    margin-bottom: 55px;
+    font-size: 14px;
+    overflow: hidden;
+    font-weight: 600;
+    display: none; }
+  .mascaraVideo .duracao {
+    font-size: 9px;
+    color: #fff;
+    margin-top: 95px;
+    /*display: none;	*/ }
+
+.boxMural {
+  width: 230px;
+  height: 160px;
+  background-color: #000;
+  overflow: hidden; }
+  .boxMural img {
+    width: 100%;
+    height: 100%; }
+    .boxMural img .imgVideo {
+      width: 140%;
+      height: 140%;
+      margin-top: -30px;
+      margin-left: -25%; }
+
+.mural {
+  width: 100%; }
+  .mural ul li {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0 5px 10px 6px;
+    vertical-align: top; }
+    .mural ul li:hover .mascaraImg {
+      display: block; }
+    .mural ul li:hover:hover .tituloPromo {
+      display: block; }
+
+/*p├ígina detalhe m├¡dia*/
+.conteudoEsquerdo {
+  /*max-width: 490px;*/
+  width: 50%;
+  height: auto;
+  float: left;
+  padding-top: 10px; }
+  .conteudoEsquerdo .conteinerMidia {
+    max-width: 490px;
+    height: 330px;
+    overflow: hidden;
+    /*display: none;*/ }
+  .conteudoEsquerdo .midia {
+    max-width: 100%; }
+  .conteudoEsquerdo .editarExcluirMidia {
+    max-width: 490px;
+    height: 45px;
+    text-align: center;
+    padding-top: 15px; }
+    .conteudoEsquerdo .editarExcluirMidia .detalhes {
+      display: inline-block;
+      text-decoration: underline;
+      margin-right: 50px; }
+      .conteudoEsquerdo .editarExcluirMidia .detalhes img {
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+        vertical-align: bottom; }
+      .conteudoEsquerdo .editarExcluirMidia .detalhes a {
+        color: #24d1ff;
+        font-size: 12px;
+        font-weight: 400; }
+      .conteudoEsquerdo .editarExcluirMidia .detalhes button {
+        width: auto !important;
+        background-color: transparent;
+        color: #24d1ff;
+        font-size: 12px;
+        font-weight: 400;
+        text-decoration: underline;
+        cursor: pointer; }
+  .conteudoEsquerdo .video {
+    max-width: 490px;
+    height: auto;
+    overflow: hidden; }
+    .conteudoEsquerdo .video video {
+      width: 100% !important;
+      height: 100% !important; }
+  .conteudoEsquerdo .audio {
+    width: 490px;
+    border: 5px solid #d9d9d9;
+    border-radius: 5px; }
+    .conteudoEsquerdo .audio audio {
+      width: 100%;
+      height: 32px;
+      margin-top: 5px; }
+
+.conteudo_direito {
+  float: right;
+  width: 47%;
+  font-size: 12px;
+  font-weight: 300; }
+
+.tituloCampanha {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 40px; }
+
+.conteinerVigencia {
+  margin-top: 20px; }
+  .conteinerVigencia .vigencia {
+    max-width: 220px;
+    font-size: 15px;
+    background-color: #66ff00;
+    /*background-color: $fonteVigenciaVencida;*/
+    display: block;
+    padding: 4px 8px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-weight: 600; }
+  .conteinerVigencia .vigenciaVencida {
+    background-color: #ffa903; }
+
+.link_utl {
+  font-weight: 600; }
+
+.colunas {
+  max-width: 490px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-transform: capitalize; }
+  .colunas li {
+    display: inline-block;
+    width: 208px;
+    height: auto;
+    /*background-color: #fff000;*/
+    padding-right: 10px;
+    margin: 10px 0;
+    vertical-align: top; }
+    .colunas li:nth-child(even) {
+      margin-left: 20px; }
+  .colunas a {
+    color: #24d1ff;
+    text-decoration: underline; }
+
+.descricaoCampanha {
+  margin-bottom: 20px; }
+
+.offline a, .online a {
+  display: block; }
+
+.titulo {
+  font-weight: 300;
+  font-size: 12px; }
+
+.informacao {
+  font-weight: 600; }
+
+.lista li {
+  width: 100%;
+  display: block;
+  margin-left: 0 !important;
+  margin-top: 30px; }
+
+.conteudoInferior {
+  padding-top: 50px;
+  font-size: 12px; }
+  .conteudoInferior p {
+    display: inline-block; }
+  .conteudoInferior a {
+    color: #24d1ff;
+    text-decoration: underline;
+    display: inline-block;
+    margin-left: 15px; }
+
+.outrasImagens {
+  margin-top: 25px; }
+  .outrasImagens li {
+    width: 235px;
+    height: 156px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 8px; }
+    .outrasImagens li:last-child {
+      margin-right: 0; }
+  .outrasImagens img {
+    width: 100%;
+    height: 100%; }
+
+/*pagina cadastrar m├¡dia */
+.tituloPagina {
+  margin: 50px 0;
+  text-align: center; }
+  .tituloPagina .cadastroMidia {
+    font-size: 30px;
+    color: #00314b;
+    font-weight: 300; }
+  .tituloPagina .alteracaoMidia {
+    font-size: 30px;
+    color: #00314b;
+    font-weight: 300; }
+
+.upload {
+  background-image: url(../img/bg_upload_midia2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  border: 5px solid #d9d9d9; }
+  .upload h1 {
+    font-size: 14px;
+    font-weight: 6 00;
+    margin-top: 190px;
+    margin-bottom: 4px; }
+  .upload p {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  .upload a {
+    color: #24d1ff;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: none; }
+
+.linkPadrao {
+  color: #24d1ff;
+  text-decoration: underline;
+  text-transform: none;
+  background-image: url(../img/icon_adicionar.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+  padding-left: 25px;
+  font-size: 12px; }
+
+.caixaTitulo {
+  width: 100%;
+  padding: 12px 20px;
+  border: 5px solid #d9d9d9;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+.horizontal {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: auto; }
+  .horizontal li {
+    display: inline-block;
+    margin: 0 5px; }
+
+.caixaVigencia {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .caixaVigencia .titulo {
+    margin-bottom: 10px; }
+
+.dataVigencia {
+  width: 100%;
+  margin: 0 !important;
+  margin-bottom: 10px !important; }
+
+.caixa1 {
+  margin-bottom: 25px; }
+
+.borda {
+  padding: 12px 15px;
+  border: 5px solid #d9d9d9;
+  /*margin-top: 10px;*/ }
+
+.selects {
+  margin-bottom: 20px; }
+  .selects li {
+    width: 65%;
+    		/*padding: 5px 15px;
+    */
+    /*border: $bordaForm;*/
+    overflow: hidden;
+    margin-top: 10px; }
+  .selects select {
+    width: 100%;
+    background-color: #fff;
+    text-transform: capitalize; }
+
+.data {
+  width: 135px; }
+  .data input {
+    width: 100%;
+    text-align: center; }
+
+.txt {
+  width: 100%;
+  height: 135px;
+  margin-top: 10px; }
+
+.vertical {
+  margin: 25px 0; }
+  .vertical li {
+    margin-bottom: 10px; }
+  .vertical h1 {
+    margin-top: 10px; }
+
+.caixa_select {
+  height: 38px;
+  overflow: hidden;
+  background: url(../img/seta_select.png) no-repeat #fff;
+  width: 100%;
+  padding: 8px 15px;
+  display: inline-table;
+  background-position: 90% 16px;
+  border: 5px solid #d9d9d9; }
+  .caixa_select select {
+    /*height: 30px;*/
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    font-size: 14px;
+    color: #000;
+    width: 120%;
+    outline: none; }
+  .caixa_select .selectBusca {
+    font-size: 12px; }
+
+.opcoesDeBusca .caixa_select {
+  padding: 5px 10px;
+  height: 30px; }
+
+.bordaSelect {
+  width: 65%;
+  padding: 8px 15px;
+  border: 5px solid #d9d9d9;
+  margin-bottom: 10px; }
+
+.utilizacao {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .utilizacao li {
+    margin: 0 0 10px 0;
+    padding-right: 0; }
+  .utilizacao .first {
+    margin-right: 20px; }
+  .utilizacao h1, .utilizacao p {
+    display: inline-block;
+    margin-bottom: 10px; }
+  .utilizacao input {
+    margin-bottom: 5px;
+    width: 100%; }
+  .utilizacao a {
+    text-transform: none;
+    font-size: 12px;
+    background-image: url(../img/icon_adicionar.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 25px; }
+
+.botaoCadastrar {
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-image: url(../img/bg_botaoCadastrar.png); }
+
+select, input, textarea {
+  outline: none; }
+
+.conteudo_direito {
+  	/*.prettycheckbox>a, .prettyradio>a{
+  		background: url(../img/Elipse_erro.png) no-repeat;
+  
+  	}*/
+  /* elipse de erro. obs: colocar classe inputErro na tag "a" que o plugin cria*/ }
+  .conteudo_direito .prettycheckbox > a, .conteudo_direito .prettyradio > a {
+    height: 32px;
+    width: 32px;
+    display: block;
+    /* float: left; */
+    cursor: pointer;
+    margin: 0;
+    background: url(../img/Elipse.png) no-repeat;
+    margin-bottom: -10px; }
+  .conteudo_direito .prettycheckbox > a.checked, .conteudo_direito .prettyradio > a.checked {
+    height: 32px;
+    width: 32px;
+    background: url(../img/Elipse_checked.png) no-repeat; }
+  .conteudo_direito .prettyradio > a.checked:focus {
+    background-position: 0 0; }
+  .conteudo_direito .prettycheckbox label, .conteudo_direito .prettyradio label {
+    display: none; }
+  .conteudo_direito .has-pretty-child {
+    height: 32px; }
+  .conteudo_direito .prettycheckbox > a.inputErro, .conteudo_direito .prettyradio > a.inputErro {
+    height: 32px;
+    width: 32px;
+    display: block;
+    cursor: pointer;
+    margin: 0;
+    background: url(../img/Elipse_erro.png) no-repeat;
+    margin-bottom: -10px; }
+
+.cadastroForm select {
+  font-size: 14px; }
+.cadastroForm input {
+  font-size: 14px; }
+.cadastroForm label {
+  font-size: 14px;
+  margin-bottom: 10px; }
+.cadastroForm textarea {
+  font-size: 14px; }
+.cadastroForm .informacao {
+  font-size: 14px; }
+.cadastroForm .titulo {
+  font-size: 14px; }
+
+/* cadastro de usu├írio */
+.tituloUsuarios {
+  font-size: 30px;
+  font-weight: 600; }
+
+.novo {
+  float: right;
+  text-align: right;
+  font-size: 12px;
+  color: #24d1ff;
+  text-transform: uppercase;
+  background-image: url(../img/icon_adicionar.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 20px;
+  margin-top: -25px; }
+
+.tituloColunas {
+  overflow: hidden;
+  height: auto;
+  margin-top: 35px;
+  padding-left: 25px;
+  border-bottom: 1px solid #8098a5; }
+
+.tituloColunas li {
+  width: 27.8%;
+  float: left;
+  padding: 15px 0 20px 0;
+  margin-right: 5px;
+  text-transform: uppercase;
+  font-size: 11px; }
+  .tituloColunas li:last-child {
+    width: 15% !important;
+    padding-left: 25px;
+    margin: 0 !important; }
+  .tituloColunas li:nth-child(4n-1) {
+    text-align: center; }
+
+.tabelaDeUsuarios ul:nth-child(even) {
+  background-color: #ececec; }
+
+.linha {
+  overflow: hidden;
+  height: auto;
+  padding-left: 25px; }
+
+.linha li {
+  width: 27.8%;
+  float: left;
+  padding: 25px 0 20px 0;
+  margin-right: 5px;
+  font-size: 12px; }
+  .linha li:first-child {
+    font-weight: 600; }
+  .linha li:last-child {
+    width: 15% !important;
+    padding-left: 25px;
+    margin: 0 !important;
+    /*text-align: center;*/ }
+  .linha li:nth-child(4n-1) {
+    text-align: center; }
+
+button {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  margin: 0 12px;
+  cursor: pointer;
+  outline: none; }
+
+.editar {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  margin: 0 12px;
+  cursor: pointer;
+  background-image: url(../img/icon_editar_usuario.png);
+  background-repeat: no-repeat; }
+
+.excluir {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  margin: 0 12px;
+  background-image: url(../img/icon_remover_usuario.png);
+  background-repeat: no-repeat; }
+
+.adicionar {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  margin: 0 12px;
+  cursor: pointer;
+  background-image: url(../img/icon_adicionar_produto.png);
+  background-repeat: no-repeat; }
+
+/* p├ígina produtos */
+.conteinerProduto {
+  background-color: #ececec;
+  margin-top: 10px;
+  padding-bottom: 30px; }
+  .conteinerProduto .produto {
+    padding: 0 66px; }
+  .conteinerProduto li {
+    border-bottom: 1px solid #c9c9c9; }
+
+.produtos li {
+  width: 50%;
+  border: none; }
+  .produtos li:last-child {
+    width: 48% !important;
+    text-align: right; }
+
+.produto {
+  font-size: 12px; }
+  .produto li {
+    padding: 15px 0; }
+  .produto p {
+    width: 89.5%;
+    display: inline-block; }
+  .produto .excluir {
+    margin-right: 0; }
+
+/* geral */
+/* modal */
+.janela {
+  display: none;
+  width: 400px;
+  height: auto;
+  background-color: #fff;
+  border: 2px solid #d9d9d9;
+  position: absolute;
+  /*  left: 45% !important;
+    top:0 !important;*/
+  /* margin-left: -960px;*/
+  z-index: 9900;
+  padding: 10px 15px 30px 10px;
+  text-align: center; }
+  .janela p {
+    font-size: 16px; }
+
+#mascara {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9000;
+  background-image: url(../img/fundo_modal.png); }
+
+.fechar {
+  float: right; }
+
+.fechar img {
+  margin-top: -5px; }
+
+.imgModal {
+  margin: 30px 0; }
+
+/* fim modal */
+.label_cadastro {
+  font-size: 14px; }
+
+.lastChild {
+  margin: 0 !important; }
+
+/* reseta o float */
+.clear {
+  clear: both; }
+
+/* classe que alinha os novos itens da li .dataVigencia */
+/*.copia {
+	width: 99%;
+	text-align: right;
+}*/
+/*retira background*/
+.back {
+  background: none; }
+
+/* cria uma borda vermelha nos campos n├úo preenchidos */
+.erro {
+  border-color: #FF6347;
+  border-color: rgba(255, 9, 5, 0.2) !important; }
+
+.caixa_select .erro {
+  border-color: #FF6347;
+  border-color: rgba(255, 9, 5, 0.2) !important; }
+
+/* muda a cor do background do botao entrar(login) */
+.btEntrar_erro {
+  background-image: none !important;
+  background-color: rgba(255, 9, 5, 0.5) !important; }
+
+/* desabilita tags */
+.display {
+  display: none; }
+
+@media only screen and (max-width: 800px) {
+  .conteiner {
+    width: 100%;
+    height: 100% !important; }
+
+  .cabecalho {
+    width: 100%; }
+
+  .headerConteiner {
+    width: 100%;
+    padding: 0 20px; }
+    .headerConteiner h1 {
+      font-size: 1em;
+      margin-top: 30px; }
+
+  .bgTransparente {
+    margin-top: 100px; }
+
+  .caixaDireita {
+    bottom: 100px; } }
+/* Esqueceu a senha  */
+.div-esq-senha {
+  text-align: center;
+  margin: 12px auto 0;
+  max-width: 127px;
+  background: url(../img/bg-esq-senha.png) repeat; }
+  .div-esq-senha a {
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    font-size: 12px;
+    padding: 3px 0 6px;
+    display: block;
+    font-weight: 400; }
+
+.janela-esq-senha {
+  width: 335px;
+  height: 196px;
+  text-align: left; }
+  .janela-esq-senha p {
+    color: #00314b;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    width: 275px;
+    margin: 15px auto 20px; }
+  .janela-esq-senha form {
+    width: 275px;
+    margin: 0 auto; }
+    .janela-esq-senha form ul {
+      float: left;
+      width: 100%; }
+      .janela-esq-senha form ul li {
+        float: left;
+        width: 100%; }
+        .janela-esq-senha form ul li input {
+          float: left;
+          width: 100%;
+          border: solid 4px #d9d9d9;
+          padding: 11px 18px;
+          color: #00314b;
+          font-size: 14px;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 400; }
+        .janela-esq-senha form ul li ::-webkit-input-placeholder {
+          color: #00314b;
+          font-size: 14px;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 400; }
+        .janela-esq-senha form ul li :-moz-placeholder {
+          color: #00314b;
+          font-size: 14px;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 400; }
+        .janela-esq-senha form ul li ::-moz-placeholder {
+          color: #00314b;
+          font-size: 14px;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 400; }
+        .janela-esq-senha form ul li :-ms-input-placeholder {
+          color: #00314b;
+          font-size: 14px;
+          font-family: "Open Sans", sans-serif;
+          font-weight: 400; }
+      .janela-esq-senha form ul li + li {
+        text-align: center; }
+        .janela-esq-senha form ul li + li input {
+          cursor: pointer;
+          text-transform: uppercase;
+          color: #fff;
+          background: #00b3e3;
+          font-weight: 400; }
+
+/* Esqueceu a senha  */
+
+/*# sourceMappingURL=estilo.css.map */

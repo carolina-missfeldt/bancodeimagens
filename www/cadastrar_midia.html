@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<link rel="stylesheet" href="../css/estilo.min.css?<?php echo time(); ?>">
+		<link rel="stylesheet" href="../css/prettyCheckable.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		<script type="text/javascript" src="../js/jquery-1.12.3.min.js" ></script>
+		<script src="../js/prettyCheckable.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.placeholder.min.js"></script>
+		<script type="text/javascript" src="../js/html5.js"></script>
+		<!--[if IE 8]>
+			<script src="../js/html5shiv.min.js"></script>
+			<link rel="stylesheet" href="../css/ie8.css">
+
+		<![endif]-->	
+		<style>
+			.conteudoEsquerdo {
+				padding-top:0;
+			}
+		</style>
+
+		<meta charset="UTF-8">
+		<title>Cadastrar Mídia</title>
+	</head>
+	<body>
+						<header class="cabecalho">
+				<div class="headerConteiner">
+					<a href="home.php"><img src="../img/logo.png" alt="logo Porto Seguro"></a>
+					<h1>Banco de Imagens</h1>
+					<div class="conteudoDireito">
+						<p>Olá,</p><p id="usuario" class="usuario">Carlos Andrade</p>
+						
+							
+							<ul class="menu">
+								<li class="iconMenu">
+									<img src="../img/icon_menu.png" alt="icone do menu" class="iconeDoMenu">
+									<div class="menuDropDown">
+										<ul>
+											<a href="cadastrar_midia.html">
+												<li>
+												
+													<img src="../img/icon_cad_midia.png" alt="">
+													<p>cadastrar mídia</p>
+												
+												</li>
+											</a>
+											
+											<a href="#">
+												<li>
+													
+													<img src="../img/icon_cad_usuario.png" alt="">
+														<p>gerenciar usuário</p>
+													
+												</li>
+											</a>
+											<a href="#">
+												<li>
+													
+														<img src="../img/icon_cad_agencia.png" alt="">
+														<p>gerenciar agência</p>
+													
+												</li>
+											</a>
+											<a href="#">
+												<li>
+												
+														<img src="../img/icon_cad_produto.png" alt="">
+														<p>gerenciar produto</p>
+													
+												</li>
+											</a>
+											<a href="#">
+												<li>
+													
+														<img src="../img/icon_relatorios.png" alt="">
+														<p>relatórios</p>
+													
+												</li>
+											</a>
+											<a href="index.html">
+												<li class="last">
+													
+														<img src="../img/icon_sair.png" alt="">
+														<p>sair</p>
+													
+												</li>
+											</a>
+										</ul>
+									</div>
+								</li>
+									
+
+							</ul>
+						
+					</div>
+				</div>
+
+			</header>	
+			<div class="conteiner2">
+				
+				<div class="conteudo">
+					<div class="tituloPagina">
+						<a href="#" class="linkVoltar">voltar</a>
+						<h1 class="cadastroMidia">Cadastro de Mídia</h1>
+						<h1 class="alteracaoMidia display">Alteração de Mídia</h1>
+					</div>
+					<form action="#" class="cadastroForm">
+					<div class="conteudoEsquerdo">
+						<div class="conteinerMidia upload">
+							<h1>Arraste e jogue o arquivo aqui.</h1>
+							<p>(jpg, gif, wmv, avi, wav, mp3, mp4)</p>
+							<a href="#">ou clique aqui para encontrar o arquivo</a>
+						</div>
+						<div class="editarExcluirMidia">
+							
+							<p class="detalhes lastChild"><button><img src="../img/icon_excluir.png" alt="">excluir mídia</button></p>
+						</div>
+					</div>
+					<div class="conteudo_direito">
+						
+							<label for="nomeDoArquivo" class="label-cadastro">Nome do arquivo</label>
+							<input type="text" name="" placeholder="Nome ou título do arquivo" class="caixaTitulo" id="nomeDoArquivo" >
+							<ul class="horizontal caixaVigencia">
+								<h1 class="titulo">Vigência</h1>
+								<li class="dataVigencia">
+									<ul>
+										<li class="informacao">começo</li>
+										<li class=" data"><input type="text" placeholder="DD/MM/AA" class="borda"></li>
+										<li class="informacao">fim</li>
+										<li class=" data lastChild"><input type="text" placeholder="DD/MM/AA" class="borda"></li>
+									</ul>
+								</li>
+																<li class="dataVigencia">
+									<ul>
+										<li class="informacao">começo</li>
+										<li class=" data"><input type="text" placeholder="DD/MM/AA" class="borda"></li>
+										<li class="informacao">fim</li>
+										<li class=" data lastChild"><input type="text" placeholder="DD/MM/AA" class="borda"></li>
+									</ul>
+								</li>
+		
+								<a href="#" class="linkPadrao">adicionar vigência</a>
+							</ul>
+							<label for="descricaDoArquivo" class="label-cadastro">Descricão do arquivo</label>
+							<textarea name="" id="descricaDoArquivo" cols="30" rows="10" placeholder="Descrição do arquivo" class="borda txt"></textarea>
+							<ul class="vertical selects">
+								<label for="produto" class="label-cadastro">Produto Porto Seguro</label>
+								<li>
+									<div class="caixa_select">
+										<select name="" id="produto">
+											<option value="0">selecione</option>
+										</select>
+									</div>
+								</li>
+								<label for="subproduto" class="label-cadastro">Subproduto Porto Seguro</label>
+								<li class="">
+									<div class="caixa_select">
+										<select name="" id="subproduto">
+											<option value="0">selecione</option>
+										</select>
+									</div>
+								</li>
+								<label for="campanha" class="label-cadastro">Campanha</label>
+								<li>
+									<div class="caixa_select">
+										<select name="" id="campanha">
+											<option value="0">selecione</option>
+										</select>
+									</div>
+								</li>
+							</ul>
+							<ul class="horizontal caixa1">
+								<li class="titulo">Direito de utilização</li>
+								<li><input type="checkbox" name="utilizacao" value="sim" data-label=""  class="inputRadio"></li>
+								<li class="informacao">Offline</li>
+								<li class="titulo">e/ou</li>
+								<li><input type="checkbox" name="utilizacao" value="nao" data-label="" class="inputRadio"></li>
+								<li class="informacao">Online</li>
+							</ul>
+							<ul class="colunas utilizacao">
+								<li class="first">
+									<h1 class="titulo">utilização</h1>
+									<p class="informacao">
+										offline
+									</p>
+									<div>
+										<input type="text"  placeholder="Nome do canal/veículo" class="borda" >
+									</div>
+									<a href="#" class="linkPadrao">canal/veículo</a>
+									
+								</li>
+								<li>
+									<h1 class="titulo">utilização</h1>
+									<p class="informacao">
+										online
+									</p>
+									<div>
+										<input type="text" class="borda" placeholder="URL do canal/veículo">
+									</div>
+									<a href="#" class="linkPadrao">canal/veículo</a>
+								</li>				
+							</ul>
+							<label for="descricaoDaCampanha" class="label-cadastro">Descrição da campanha</label>
+							<textarea name="" id="descricaoDaCampanha" cols="30" rows="10" placeholder="Descrição da campanha" class="borda txt"></textarea>
+							<ul class="vertical">
+								<li><label for="agencia_fornecedor" class="label-cadastro">Agência/Fornecedor</label></li>
+								<li class="caixa_select bordaSelect">
+									<select name="" id="agencia_fornecedor">
+										<option value="0">Selecione</option>
+									</select>
+								</li>
+							
+							<ul class="horizontal">
+								<li class="titulo">De acordo com o Guia de Estilo?</li> 
+								<li>
+									<input type="radio" name="guiaDeEstilo" value="sim" class="inputRadio">
+								</li>
+								<li class="informacao">Sim</li>
+								<li>
+									<input type="radio" name="guiaDeEstilo" value="nao" class="inputRadio">
+								</li>
+								<li class="informacao">
+									Não
+								</li>
+							</ul>
+							<h1 class="titulo">Origem do arquivo</h1>
+							<input type="text" class="caixaTitulo" placeholder="URL ou info de contato do fornecedor do arquivo">
+							<h1 class="titulo">Arquivo disponível</h1>
+							<input type="text" class="caixaTitulo" placeholder="Localização do arquivo na rede Porto Seguro">
+
+							<input type="submit" value="Cadastrar Mídia" class="botaoCadastrar">
+	
+						</form>
+
+					</div>
+					<div class="clear"></div>
+				</div>
+
+			</div>
+
+			<footer class="rodape">
+				<div class="footerConteiner">
+					<p class="copy">&copy Thu Jul 28 10:40:17 BRT 2016 Porto Seguro - Todos os direitos reservados</p>
+					<a href="#" class="politica_de_privacidade">Política de Privacidade</a>
+				</div>
+			</footer>
+			<script>
+						
+				$('input, textarea').placeholder();
+			
+			</script> 
+			<script>
+				$().ready(function(){
+
+				  $('input.inputRadio').prettyCheckable({
+				    color: 'red'
+				  });
+
+				});
+			</script>
+	</body>
+</html>

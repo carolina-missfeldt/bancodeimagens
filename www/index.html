@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	   	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../css/estilo.min.css?<?php echo time(); ?>">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		<script type="text/javascript" src="../js/jquery-1.12.3.min.js" ></script>
+		<script type="text/javascript" src="../js/jquery.placeholder.min.js"></script>
+		<script type="text/javascript" src="../js/html5.js"></script>
+		<script src="../js/janela.js"></script>
+
+
+		<meta charset="UTF-8">
+		<title>Home login</title>
+		<style>
+				body, .conteinerGeral{
+					width: 100%;
+					height: 100%;
+
+				}
+
+		</style>
+		<!--[if IE 8]>
+			<script src="../js/html5shiv.min.js"></script>
+			<link rel="stylesheet" href="../css/ie8.css">
+		<![endif]-->
+	</head>
+		<body>
+		<div class="conteinerGeral">
+			<header class="cabecalho1">
+				<div class="headerConteiner">
+					<img src="../img/logo.png" alt="logo Porto Seguro">
+					<h1>Banco de imagens</h1>
+				</div>
+			</header>
+			<div class="conteiner">
+				
+				<div class="bgTransparente">
+					<form>
+						<input type="text" name="" onfocus="if(this.value=='matrícula') this.value = '';" onblur="if(this.value=='') this.value = 'matrícula';" value="matrícula">
+						<input type="text" name="" onfocus="if(this.value=='senha') this.value = '';" onblur="if(this.value=='') this.value = 'senha';" value="senha">
+						<input type="submit" name="entrar" value="ENTRAR" class="btEntrar">
+					</form>
+				</div>
+				
+				<!-- Esqueceu a senha -->
+				<div class="div-esq-senha">
+				    <a href="#janela" rel="modal">Esqueceu a senha?</a>					
+				</div>
+				<div id="mascara"></div>				
+				<div class="janela janela-esq-senha" id="janela">
+					<a href="#" class="fechar"><img src="../img/icon_modal_fechar.png" alt=""></a>
+					<p>Insira e envie seu e-mail.</p>
+					<form>
+						<ul>
+							<li>
+								<input type="text" name="" placeholder="e-mais">
+							</li>
+							<li>
+								<input type="submit" name="" value="Enviar">
+							</li>
+						</ul>
+					</form>
+				</div>
+				<!-- Esqueceu a senha -->
+
+
+				<div class="caixaDireita">
+					<h1 class="promocao">Dia dos namorados Porto 2016</h1>
+					<h2>proteção e monitoramento</h2>
+					<h3>segurança e saúde ocupacional</h3>
+					<a href="#" class="detalhes">ver detalhes</a>
+				</div>
+			</div>
+
+            <!--[if lt IE 9]>
+                   <img src="../img/bg_login_ie8.jpg" class="bg_ie8">
+            <![endif]-->
+			<footer class="rodape1">
+				<div class="footerConteiner">
+					<p class="copy">&copy Thu Jul 28 10:40:17 BRT 2016 Porto Seguro - Todos os direitos reservados</p>
+					<a href="#" class="politica_de_privacidade">Política de Privacidade</a>
+				</div>
+			</footer>
+		</div>
+<!-- 			<script>
+				$('input, textarea').placeholder();
+			</script> -->
+		</body>
+</html>
