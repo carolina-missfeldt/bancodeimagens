@@ -2,17 +2,17 @@
 <html lang="en">
 	<head>
 		
-		<link rel="stylesheet" href="../css/estilo.min.css?<?php echo time(); ?>">
+		<link rel="stylesheet" href="css/estilo.min.css?<?php echo time(); ?>">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-		<script type="text/javascript" src="../js/jquery-1.12.3.min.js" ></script>
-		<script type="text/javascript" src="../js/jquery.placeholder.min.js"></script>
-		<script type="text/javascript" src="../js/html5.js"></script>
+		<script type="text/javascript" src="js/jquery-1.12.3.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+		<script type="text/javascript" src="js/html5.js"></script>
 		<meta charset="UTF-8">
 		<title>Home</title>
 		<!--[if IE 8]>
-			<script src="../js/html5shiv.min.js"></script>
-			<link rel="stylesheet" href="../css/ie8.css">
-		<![endif]-->						
+		<script src="js/html5shiv.min.js"></script>
+		<link rel="stylesheet" href="css/ie8.css">
+		<![endif]-->
 		<style>
 			.linkVoltar {
 				display: none;
@@ -20,84 +20,81 @@
 		</style>
 	</head>
 	<body>
-		 <div class="conteinerGeral"> 
-
-						<header class="cabecalho">
+		<div class="conteinerGeral">
+			<header class="cabecalho">
 				<div class="headerConteiner">
-					<a href="home.php"><img src="../img/logo.png" alt="logo Porto Seguro"></a>
+					<a href="home.html"><img src="img/logo.png" alt="logo Porto Seguro"></a>
 					<h1>Banco de Imagens</h1>
 					<div class="conteudoDireito">
 						<p>Olá,</p><p id="usuario" class="usuario">Carlos Andrade</p>
 						
+						
+						<ul class="menu">
+							<li class="iconMenu">
+								<img src="img/icon_menu.png" alt="icone do menu" class="iconeDoMenu">
+								<div class="menuDropDown">
+									<ul>
+										<a href="cadastrar_midia.html">
+											<li>
+												
+												<img src="img/icon_cad_midia.png" alt="">
+												<p>cadastrar mídia</p>
+												
+											</li>
+										</a>
+										
+										<a href="usuarios.html">
+											<li>
+												
+												<img src="img/icon_cad_usuario.png" alt="">
+												<p>gerenciar usuário</p>
+												
+											</li>
+										</a>
+										<a href="#">
+											<li>
+												
+												<img src="img/icon_cad_agencia.png" alt="">
+												<p>gerenciar agência</p>
+												
+											</li>
+										</a>
+										<a href="produtos.html">
+											<li>
+												
+												<img src="img/icon_cad_produto.png" alt="">
+												<p>gerenciar produto</p>
+												
+											</li>
+										</a>
+										<a href="detalhe_midia.html">
+											<li>
+												
+												<img src="img/icon_relatorios.png" alt="">
+												<p>Pág "detalhe_midia"</p>
+												
+											</li>
+										</a>
+										<a href="index.html">
+											<li class="last">
+												
+												<img src="img/icon_sair.png" alt="">
+												<p>sair</p>
+												
+											</li>
+										</a>
+									</ul>
+								</div>
+							</li>
 							
-							<ul class="menu">
-								<li class="iconMenu">
-									<img src="../img/icon_menu.png" alt="icone do menu" class="iconeDoMenu">
-									<div class="menuDropDown">
-										<ul>
-											<a href="cadastrar_midia.html">
-												<li>
-												
-													<img src="../img/icon_cad_midia.png" alt="">
-													<p>cadastrar mídia</p>
-												
-												</li>
-											</a>
-											
-											<a href="#">
-												<li>
-													
-													<img src="../img/icon_cad_usuario.png" alt="">
-														<p>gerenciar usuário</p>
-													
-												</li>
-											</a>
-											<a href="#">
-												<li>
-													
-														<img src="../img/icon_cad_agencia.png" alt="">
-														<p>gerenciar agência</p>
-													
-												</li>
-											</a>
-											<a href="#">
-												<li>
-												
-														<img src="../img/icon_cad_produto.png" alt="">
-														<p>gerenciar produto</p>
-													
-												</li>
-											</a>
-											<a href="#">
-												<li>
-													
-														<img src="../img/icon_relatorios.png" alt="">
-														<p>relatórios</p>
-													
-												</li>
-											</a>
-											<a href="index.html">
-												<li class="last">
-													
-														<img src="../img/icon_sair.png" alt="">
-														<p>sair</p>
-													
-												</li>
-											</a>
-										</ul>
-									</div>
-								</li>
-									
-
-							</ul>
+						</ul>
 						
 					</div>
 				</div>
-
 			</header>
-				<div class="clear"></div>
+			<div class="clear"></div>
 			<div class="conteiner2">
-								
+				
 				<a href="home.php" class="linkVoltar">voltar
 				</a>
 				<div class="conteinerBusca">
@@ -105,19 +102,18 @@
 					<form>
 						<ul>
 							
-
 							<li class="campoBusca">
-							
-								 <input type="text" name="" class="textoBusca" onfocus="if(this.value=='Procure imagens, vídeos e/ou áudios') this.value = '';" onblur="if(this.value=='') this.value = 'Procure imagens, vídeos e/ou áudios';" value="Procure imagens, vídeos e/ou áudios">
-						
+								
+								<input type="text" name="" class="textoBusca" onfocus="if(this.value=='Procure imagens, vídeos e/ou áudios') this.value = '';" onblur="if(this.value=='') this.value = 'Procure imagens, vídeos e/ou áudios';" value="Procure imagens, vídeos e/ou áudios">
+								
 							</li>
 							<li class="campoSelect">
 								
-									<select name="" id="" class="select">				
+								<select name="" id="" class="select">
 									<option value="0" selected="selected">imagens</option>
 									<option value="1">vídeos</option>
 									<option value="2">áudios</option>
-									</select>
+								</select>
 								
 							</li>
 							<li class="conteinerLupa">
@@ -126,7 +122,6 @@
 						</ul>
 					</form>
 				</div>
-
 				<div class="opcoesDeBusca">
 					<form action="#">
 						<ul>
@@ -134,43 +129,43 @@
 							<li>
 								
 								<div class="caixa_select back">
-								<!-- <select name="" id="" class="selectBusca">
-									<option value="0">Vigência</option>
-								</select> -->
+									<!-- <select name="" id="" class="selectBusca">
+											<option value="0">Vigência</option>
+									</select> -->
 									<input type="text" class="selectBusca"  id="vigencia">
 								</div>
 							</li>
 							<label for="dataAdicao" class="label-input">Data de adição</label>
 							<li>
 								<div class="caixa_select back">
-								<!-- <select name="" id="" class="selectBusca">>
-									<option value="1">Data adição</option>
-								</select> -->
-								<input type="text" class="selectBusca" id="dataAdicao" >
+									<!-- <select name="" id="" class="selectBusca">>
+											<option value="1">Data adição</option>
+									</select> -->
+									<input type="text" class="selectBusca" id="dataAdicao" >
 								</div>
 							</li>
 							<label class="label-input">Produto</label>
 							<li>
 								<div class="caixa_select">
-								<select name="" id="" class="selectBusca">
-									<option value="2">Selecione</option>
-								</select>
+									<select name="" id="" class="selectBusca">
+										<option value="2">Selecione</option>
+									</select>
 								</div>
 							</li>
 							<label  class="label-input">Subproduto</label>
 							<li>
 								<div class="caixa_select">
-								<select name="" id="" class="selectBusca">>
-									<option value="3">Selecione</option>
-								</select>
+									<select name="" id="" class="selectBusca">>
+										<option value="3">Selecione</option>
+									</select>
 								</div>
 							</li>
 							<label class="label-input">Tipo de mídia</label>
 							<li class="lastChild">
 								<div class="caixa_select">
-								<select name="" id="" class="selectBusca">>
-									<option value="4">Selecione</option>
-								</select>
+									<select name="" id="" class="selectBusca">>
+										<option value="4">Selecione</option>
+									</select>
 								</div>
 							</li>
 						</ul>
@@ -183,10 +178,10 @@
 								<div class="mascaraImg">
 									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigencia">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
 								<div class="boxMural">
-									<img src="../img/1.png" alt="">
+									<img src="img/1.png" alt="">
 								</div>
 							</a>
 						</li>
@@ -197,66 +192,58 @@
 									
 								</div>
 								<div class="boxMural">
-									<img src="../img/2.png" alt=""> 
-
+									<img src="img/2.png" alt="">
 								</div>
 							</a>
-
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
 									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigenciaVencida">vigência 	JUL/18</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
 								<div class="boxMural">
-									<img src="../img/3.png" alt="">
+									<img src="img/3.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
 									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigencia">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p> 
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
 								<div class="boxMural">
-									<img src="../img/4.png" alt="">
+									<img src="img/4.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
 									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigencia">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p> 
-					
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
+									
 								</div>
 								<div class="boxMural">
-									<img src="../img/5.png" alt="">
+									<img src="img/5.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
 									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigencia">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p> 
-
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
 								<div class="boxMural">
-									<img src="../img/6.png" alt="">
+									<img src="img/6.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
@@ -265,233 +252,213 @@
 									<!-- <p class="duracao">00:20</p> -->
 								</div>
 								<div class="boxMural">
-									<img src="../img/bg_audio_7.png" alt="">
+									<img src="img/bg_audio_7.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
 									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigencia">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p> 
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
 								<div class="boxMural">
-									<img src="../img/8.png" alt="">
+									<img src="img/8.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
 									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigencia">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p> 
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
 								<div class="boxMural">
-									<img src="../img/9.png" alt="">
+									<img src="img/9.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
-									 <h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
+									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigencia">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p> 
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
 								<div class="boxMural">
-									<img src="../img/10.png" alt="">
+									<img src="img/10.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
-									 <h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
+									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigencia">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p> 
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
 								<div class="boxMural">
-									<img src="../img/11.png" alt="">
+									<img src="img/11.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
-									 <h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
+									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigencia">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p> 
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
 								<div class="boxMural">
-									<img src="../img/12.png" alt="">
+									<img src="img/12.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
 									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigenciaVencida">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p> 
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
-
 								<div class="boxMural">
-									<img src="../img/1.png" alt="">
+									<img src="img/1.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
-									 <h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
+									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigencia">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p> 
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
 								<div class="boxMural">
-									<img src="../img/2.png" alt="">
+									<img src="img/2.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
-									 <h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
+									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigencia">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p> 
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
 								<div class="boxMural">
-									<img src="../img/3.png" alt="">
+									<img src="img/3.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
-									 <h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
+									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigencia">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p> 
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
 								<div class="boxMural">
-									<img src="../img/4.png" alt="">
+									<img src="img/4.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
-									 <h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
+									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigencia">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p> 
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
 								<div class="boxMural">
-									<img src="../img/5.png" alt="">
+									<img src="img/5.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
-									 <h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
+									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigencia">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p> 
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
 								<div class="boxMural">
-									<img src="../img/6.png" alt="">
+									<img src="img/6.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
-
-									 <h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
+									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigencia">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p> 
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
 								<div class="boxMural">
-									<img src="../img/13.png" alt="">
+									<img src="img/13.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
-									 <h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
+									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigencia">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p> 
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
 								<div class="boxMural">
-									<img src="../img/8.png" alt="">
+									<img src="img/8.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
-									 <h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
+									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigencia">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p> 
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
 								<div class="boxMural">
-									<img src="../img/9.png" alt="">
+									<img src="img/9.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
-									 <h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
+									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigencia">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p> 
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
 								<div class="boxMural">
-									<img src="../img/10.png" alt="">
+									<img src="img/10.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
-									 <h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
+									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigencia">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p> 
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
 								<div class="boxMural">
-									<img src="../img/11.png" alt="">
+									<img src="img/11.png" alt="">
 								</div>
 							</a>
-
 						</li>
 						<li>
 							<a href="#">
 								<div class="mascaraImg">
-									 <h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
+									<h1 class="tituloPromo">Dia dos Namorados lorei Porto 2015</h1>
 									<p class="vigencia">vigência NOV/15</p>
-									<p class="detalhes"><img src="../img/icon_mais.png" alt="ver detalhes">ver detalhes</p> 
+									<p class="detalhes"><img src="img/icon_mais.png" alt="ver detalhes">ver detalhes</p>
 								</div>
 								<div class="boxMural">
-									<img src="../img/12.png" alt="">
+									<img src="img/12.png" alt="">
 								</div>
 							</a>
-
 						</li>
 					</ul>
 				</div>
@@ -503,10 +470,9 @@
 					<a href="#" class="politica_de_privacidade">Política de Privacidade</a>
 				</div>
 			</footer>
-		</div> 
-
-			<script>
-				//$('input, textarea').placeholder();
-			</script> 
+		</div>
+		<script>
+			//$('input, textarea').placeholder();
+		</script>
 	</body>
 </html>

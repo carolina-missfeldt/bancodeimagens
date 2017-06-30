@@ -2,127 +2,124 @@
 <html lang="en">
 	<head>
 		
-		<link rel="stylesheet" href="../css/estilo.min.css?<?php echo time(); ?>">
-		<link rel="stylesheet" href="../css/prettyCheckable.css">
+		<link rel="stylesheet" href="css/estilo.min.css?<?php echo time(); ?>">
+		<link rel="stylesheet" href="css/prettyCheckable.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-		<script type="text/javascript" src="../js/jquery-1.12.3.min.js" ></script>
+		<script type="text/javascript" src="js/jquery-1.12.3.min.js" ></script>
 		<script src="../js/prettyCheckable.min.js"></script>
-		<script type="text/javascript" src="../js/jquery.placeholder.min.js"></script>
-		<script type="text/javascript" src="../js/html5.js"></script>
+		<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+		<script type="text/javascript" src="js/html5.js"></script>
 		<script src="../js/janela.js"></script>
 		
 		<!--[if IE 8]>
-			<script src="../js/html5shiv.min.js"></script>
-			<script src="../js/selectivizr-min.js"></script>
-			<link rel="stylesheet" href="../css/ie8.css">
-		<![endif]-->	
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/selectivizr-min.js"></script>
+		<link rel="stylesheet" href="css/ie8.css">
+		<![endif]-->
 		<meta charset="UTF-8">
 		<title>Produtos</title>
 	</head>
 	<body>
-					<header class="cabecalho">
-				<div class="headerConteiner">
-					<a href="home.php"><img src="../img/logo.png" alt="logo Porto Seguro"></a>
-					<h1>Banco de Imagens</h1>
-					<div class="conteudoDireito">
-						<p>Olá,</p><p id="usuario" class="usuario">Carlos Andrade</p>
-						
-							
-							<ul class="menu">
-								<li class="iconMenu">
-									<img src="../img/icon_menu.png" alt="icone do menu" class="iconeDoMenu">
-									<div class="menuDropDown">
-										<ul>
-											<a href="cadastrar_midia.html">
-												<li>
-												
-													<img src="../img/icon_cad_midia.png" alt="">
-													<p>cadastrar mídia</p>
-												
-												</li>
-											</a>
-											
-											<a href="#">
-												<li>
-													
-													<img src="../img/icon_cad_usuario.png" alt="">
-														<p>gerenciar usuário</p>
-													
-												</li>
-											</a>
-											<a href="#">
-												<li>
-													
-														<img src="../img/icon_cad_agencia.png" alt="">
-														<p>gerenciar agência</p>
-													
-												</li>
-											</a>
-											<a href="#">
-												<li>
-												
-														<img src="../img/icon_cad_produto.png" alt="">
-														<p>gerenciar produto</p>
-													
-												</li>
-											</a>
-											<a href="#">
-												<li>
-													
-														<img src="../img/icon_relatorios.png" alt="">
-														<p>relatórios</p>
-													
-												</li>
-											</a>
-											<a href="index.html">
-												<li class="last">
-													
-														<img src="../img/icon_sair.png" alt="">
-														<p>sair</p>
-													
-												</li>
-											</a>
-										</ul>
-									</div>
-								</li>
-									
-
-							</ul>
-						
-					</div>
-				</div>
-
-			</header>
-		<div class="conteiner2">
-							
-				<a href="home.php" class="linkVoltar">voltar
-				</a>
-				<div class="conteinerBusca">
+		<header class="cabecalho">
+			<div class="headerConteiner">
+				<a href="home.html"><img src="img/logo.png" alt="logo Porto Seguro"></a>
+				<h1>Banco de Imagens</h1>
+				<div class="conteudoDireito">
+					<p>Olá,</p><p id="usuario" class="usuario">Carlos Andrade</p>
 					
-					<form>
-						<ul>
-							
-
-							<li class="campoBusca">
-							
-								 <input type="text" name="" class="textoBusca" onfocus="if(this.value=='Procure imagens, vídeos e/ou áudios') this.value = '';" onblur="if(this.value=='') this.value = 'Procure imagens, vídeos e/ou áudios';" value="Procure imagens, vídeos e/ou áudios">
+					
+					<ul class="menu">
+						<li class="iconMenu">
+							<img src="img/icon_menu.png" alt="icone do menu" class="iconeDoMenu">
+							<div class="menuDropDown">
+								<ul>
+									<a href="cadastrar_midia.html">
+										<li>
+											
+											<img src="img/icon_cad_midia.png" alt="">
+											<p>cadastrar mídia</p>
+											
+										</li>
+									</a>
+									
+									<a href="usuarios.html">
+										<li>
+											
+											<img src="img/icon_cad_usuario.png" alt="">
+											<p>gerenciar usuário</p>
+											
+										</li>
+									</a>
+									<a href="#">
+										<li>
+											
+											<img src="img/icon_cad_agencia.png" alt="">
+											<p>gerenciar agência</p>
+											
+										</li>
+									</a>
+									<a href="produtos.html">
+										<li>
+											
+											<img src="img/icon_cad_produto.png" alt="">
+											<p>gerenciar produto</p>
+											
+										</li>
+									</a>
+									<a href="detalhe_midia.html">
+										<li>
+											
+											<img src="img/icon_relatorios.png" alt="">
+											<p>Pág "detalhe_midia"</p>
+											
+										</li>
+									</a>
+									<a href="index.html">
+										<li class="last">
+											
+											<img src="img/icon_sair.png" alt="">
+											<p>sair</p>
+											
+										</li>
+									</a>
+								</ul>
+							</div>
+						</li>
 						
-							</li>
-							<li class="campoSelect">
-								
-									<select name="" id="" class="select">				
-									<option value="0" selected="selected">imagens</option>
-									<option value="1">vídeos</option>
-									<option value="2">áudios</option>
-									</select>
-								
-							</li>
-							<li class="conteinerLupa">
-								<input type="submit" class="lupa" value="">
-							</li>
-						</ul>
-					</form>
+					</ul>
+					
 				</div>
+			</div>
+		</header>
+		<div class="conteiner2">
+			
+			<a href="home.php" class="linkVoltar">voltar
+			</a>
+			<div class="conteinerBusca">
+				
+				<form>
+					<ul>
+						
+						<li class="campoBusca">
+							
+							<input type="text" name="" class="textoBusca" onfocus="if(this.value=='Procure imagens, vídeos e/ou áudios') this.value = '';" onblur="if(this.value=='') this.value = 'Procure imagens, vídeos e/ou áudios';" value="Procure imagens, vídeos e/ou áudios">
+							
+						</li>
+						<li class="campoSelect">
+							
+							<select name="" id="" class="select">
+								<option value="0" selected="selected">imagens</option>
+								<option value="1">vídeos</option>
+								<option value="2">áudios</option>
+							</select>
+							
+						</li>
+						<li class="conteinerLupa">
+							<input type="submit" class="lupa" value="">
+						</li>
+					</ul>
+				</form>
+			</div>
 			<h1 class="tituloUsuarios">Produtos</h1>
 			<a href="#" class="novo">Cadastrar produto</a>
 			<ul class="tituloColunas produtos">
@@ -228,7 +225,6 @@
 						<a href="#" class="editar"></a>
 						<button class="excluir"></button>
 					</li>
-
 				</ul>
 			</div>
 			<div class="conteinerProduto">
@@ -280,16 +276,15 @@
 			</div>
 		</div>
 		<footer class="rodape">
-				<div class="footerConteiner">
-					<p class="copy">&copy Thu Jul 28 10:40:17 BRT 2016 Porto Seguro - Todos os direitos reservados</p>
-					<a href="#" class="politica_de_privacidade">Política de Privacidade</a>
-				</div>
-			</footer>
+			<div class="footerConteiner">
+				<p class="copy">&copy Thu Jul 28 10:40:17 BRT 2016 Porto Seguro - Todos os direitos reservados</p>
+				<a href="#" class="politica_de_privacidade">Política de Privacidade</a>
+			</div>
+		</footer>
 		<script>
 						
 			$('input, textarea').placeholder();
 			
-		</script> 
-
+		</script>
 	</body>
 </html>
